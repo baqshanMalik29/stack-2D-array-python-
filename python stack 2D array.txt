@@ -1,0 +1,24 @@
+#Global space
+stack = [None for i in range(6)]
+null = -1
+top = null
+#initialize
+def init_stack():
+    global top
+    for i in range(6):
+     stack[i] = None
+#push()
+def push(data):
+    global top, stack
+    if top == 5:
+        print("stack overflow")
+        stack[top] = data
+        top+= 1
+#pop()
+def pop():
+    if top == null:
+        print("stack underflow")
+        return 'none'
+    else:
+        return 'data'
+        top-= 1
